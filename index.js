@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-const api = require("./utils/api.js");
+const api = require("./utils/githubApi.js");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 
@@ -25,7 +25,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Enter your project repository name?",
+    message: "What is your project repository name?",
     name: "repo",
     default: "readme-generator",
   },
@@ -52,18 +52,19 @@ const questions = [
 
   {
     type: "input",
-    message: "Enter your instructions for usage of your project",
+    message: "What does the user need to know about using the repo?",
     name: "usage",
   },
   {
     type: "input",
-    message: "W ",
+    message: "What does the user need to know about contributing to the repo? ",
     name: "contributing",
   },
   {
     type: "input",
-    message: "Enter test information",
+    message: "What command should be used to run tests?",
     name: "test",
+    default: "npm test",
   },
 
   {
@@ -83,7 +84,7 @@ const writeFileAsync = util.promisify(writeToFile);
 
 
     
-async function init() {
+const init=async ()=>{
     try {
         const userResponses = await inquirer.prompt(questions);
         console.log(userResponses);
@@ -93,7 +94,6 @@ async function init() {
         console.log(userInfo);
 
         const markdown = generateMarkdown(userResponses, userInfo);
-        console.log(markdown);
 
         await writeFileAsync("generatedReadme", markdown);
     }

@@ -1,4 +1,4 @@
-function determineBadge(licenseChoices) {
+const determineBadge=licenseChoices =>{
   let badge = "";
   switch (licenseChoices) {
     case "MIT":
@@ -30,7 +30,7 @@ ${badge2}
 ${userResponses.title}
 
 
-## Description 
+## :pencil2: Description 
 ${userResponses.description}
 
 ## Table of Contents

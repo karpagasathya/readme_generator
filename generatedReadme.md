@@ -1,12 +1,12 @@
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
-![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/karpagasathya/code_quiz?style=flat&logo=appveyor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/karpagasathya/readme-generator?style=flat&logo=appveyor)
 # Project-Title
-code quiz
+readme
 
 
-## Description 
-zsdxfcgvhbj
+## :pencil2: Description 
+This is to create readme
 
 ## Table of Contents
        
@@ -30,10 +30,10 @@ npm i
 ```
 
 ## Usage 
-sxdfcgvh
+sdfg
 
 ## Contributing
-sdftgh
+sdfgb
 
 ## Tests
 To run test, run the following command:<br>
@@ -42,7 +42,7 @@ undefined
 ```
 
 ## License
-This project is licensed under the APACHE 2.0 license.
+This project is licensed under the MIT license.
 
 ## Questions
             
