@@ -1,4 +1,4 @@
-const determineBadge=licenseChoices =>{
+const determineBadge = (licenseChoices) => {
   let badge = "";
   switch (licenseChoices) {
     case "MIT":
@@ -14,19 +14,20 @@ const determineBadge=licenseChoices =>{
       badge = "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
       break;
     default:
-      badge = "";
+      badge = " ";
   }
   return badge;
-}
-
+};
 
 const generateMarkdown = (userResponses, userInfo) => {
+
   const badge = determineBadge(userResponses.license);
   const badge2 = `![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)`;
-  return `
+  return` 
 ${badge} 
 ${badge2}
 # Project-Title
+
 ${userResponses.title}
 
 
@@ -63,7 +64,7 @@ ${userResponses.contributing}
 ## Tests
 To run test, run the following command:<br>
 \`\`\`
-${userResponses.tests}
+${userResponses.test}
 \`\`\`
 
 ## License
@@ -72,7 +73,7 @@ This project is licensed under the ${userResponses.license} license.
 ## Questions
             
 
- ![Developer Profile Picture](${userInfo.avatar_url})
+ ![Profile Picture](${userInfo.avatar_url})
 
  GitHub: [@${userInfo.login}](${userInfo.url})
 

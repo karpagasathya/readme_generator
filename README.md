@@ -1,7 +1,7 @@
 # README Generator
 
 ## Description
-This is a README Generator is a command-line application that runs with Node.js which dynamically generates a good README file by answering a few prompts about your project.
+This README Generator is a command-line application that runs with Node.js which dynamically generates a good README file by answering a few prompts about your project.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -21,3 +21,11 @@ To generate your own README, first run `npm install` in order to install the fol
 
 ## Usage
 
+* When you run `node index.js`, the application uses the `inquirer` package to prompt you in the command line with a series of questions about your GitHub and about your project.
+* The application then takes your responses and uses `axios` to fetch your GitHub profile from the GitHub API, including your GitHub profile picture (avatar) and email. 
+* Finally, `fs.writeFile` is used to generate your project's README.md file.
+
+
+## License
+
+[MIT](License.txt) license

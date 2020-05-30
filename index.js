@@ -1,18 +1,23 @@
+// External packages
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
+
+// Internal modules
 const api = require("./utils/githubApi.js");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-
-
+// Inquirer prompts for userResponses
 const questions = [
   {
     type: "input",
     message: "Enter your GitHub username?",
     name: "username",
     validate: function (answer) {
-      return answer !== " " && answer.length > 3;
+      if (answer.length === " ") {
+        return console.log("A valid GitHub username is required.");
+      }
+      return true;
     },
   },
   {
@@ -20,20 +25,30 @@ const questions = [
     message: "Enter your email?",
     name: "email",
     validate: function (answer) {
-      return answer !== " ";
+      if (answer.length === " ") {
+        return console.log("A valid email is required.");
+      }
+      return true;
     },
   },
   {
     type: "input",
     message: "What is your project repository name?",
     name: "repo",
-    default: "readme-generator",
+    default: "readme_generator",
+    validate: function (answer) {
+      if (answer.length === " ") {
+        return console.log("A valid Github repo is required.");
+      }
+      return true;
+    },
   },
 
   {
     type: "input",
     message: "What is your project title?",
     name: "title",
+    default: "Readme generator",
   },
 
   {
@@ -64,7 +79,7 @@ const questions = [
     type: "input",
     message: "What command should be used to run tests?",
     name: "test",
-    default: "npm test",
+    default: "npm run test",
   },
 
   {
@@ -75,36 +90,27 @@ const questions = [
   },
 ];
 
-
 const writeToFile = (fileName, data) => {
-  fs.writeFile(fileName + ".md", data, (error) => (error ? console.error(error) : console.log(`${fileName + ".md"} file generated!`)));
+  fs.writeFile(fileName + ".md", data, (error) => (error ? console.error(error) : console.log(`${fileName + ".md"} file is generated!`)));
 };
 
 const writeFileAsync = util.promisify(writeToFile);
 
+// Main function
+const init = async () => {
+  try {
+    const userResponses = await inquirer.prompt(questions);
+    console.log(userResponses);
+    console.log("Thank you for your responses!");
 
-    
-const init=async ()=>{
-    try {
-        const userResponses = await inquirer.prompt(questions);
-        console.log(userResponses);
-        console.log("Thank you for your responses! Fetching your GitHub data next...");
+    const userInfo = await api.getUser(userResponses);
+    // console.log(userInfo);
 
-        const userInfo = await api.getUser(userResponses);
-        console.log(userInfo);
-
-        const markdown = generateMarkdown(userResponses, userInfo);
-
-        await writeFileAsync("generatedReadme", markdown);
-    }
-    catch (error) {
-        console.log(error);
-
-    }
-}
+    const markdown = generateMarkdown(userResponses, userInfo);
+    await writeFileAsync("generatedReadme", markdown);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 init();
-
-
-
-
