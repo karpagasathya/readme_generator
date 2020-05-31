@@ -21,7 +21,9 @@ To generate your own README, first run `npm install` in order to install the fol
 
 ## Usage
 
-[demo](images/demo.mov)
+<video width="320" height="240" controls>
+  <source src="images/demo.mov" type="video/mov">
+</video>
 
 * When you run `node index.js`, the application uses the `inquirer` package to prompt you in the command line with a series of questions about your GitHub and about your project.
 * The application then takes your responses and uses `axios` to fetch your GitHub profile from the GitHub API, including your GitHub profile picture (avatar) and email. 
