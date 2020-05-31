@@ -33,6 +33,6 @@ To generate your own README, first run `npm install` in order to install the fol
 ## Demo and Screenshots
 ![](images/readme2.gif)
 
-[video](images/demo.mov)
+[![Demo video](images/demo.mov)](https://drive.google.com/file/d/1frqSI7AjLU-mSA4iZQPR5_sr7Oo7dY_S/view?usp=sharing)
 
 ![image](images/image1.jpg)
