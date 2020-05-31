@@ -100,7 +100,7 @@ const writeFileAsync = util.promisify(writeToFile);
 const init = async () => {
   try {
     const userResponses = await inquirer.prompt(questions);
-    console.log(userResponses);
+    // console.log(userResponses);
     console.log("Thank you for your responses!");
 
     const userInfo = await api.getUser(userResponses);

@@ -1,13 +1,13 @@
  
-None 
-![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/karpagasathya/weather_dashboard?style=flat&logo=appveyor)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/sathya/readme_generator?style=flat&logo=appveyor)
 # Project-Title
 
-weather
+Readme generator
 
 
 ## :pencil2: Description 
-cfgvhbj
+This generates a good README file using user inputs
 
 ## Table of Contents
        
@@ -31,26 +31,26 @@ npm i
 ```
 
 ## Usage 
-dfgh
+you can clone or fork this repo
 
 ## Contributing
-dfcgvhb
+you can submit a pull request
 
 ## Tests
 To run test, run the following command:<br>
 ```
-undefined
+npm run test
 ```
 
 ## License
-This project is licensed under the None license.
+This project is licensed under the GPL 3.0 license.
 
 ## Questions
             
 
- ![Developer Profile Picture](https://avatars1.githubusercontent.com/u/60280549?v=4)
+ ![Profile Picture](https://avatars3.githubusercontent.com/u/266451?v=4)
 
- GitHub: [@karpagasathya](https://api.github.com/users/karpagasathya)
+ GitHub: [@sathya](https://api.github.com/users/sathya)
 
 If you want to see more of my work please click here undefined.
 
