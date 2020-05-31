@@ -1,13 +1,13 @@
  
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
-![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/sathya/readme_generator?style=flat&logo=appveyor)
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/karpagasathya/readme_generator?style=flat&logo=appveyor)
 # Project-Title
 
 Readme generator
 
 
 ## :pencil2: Description 
-This generates a good README file using user inputs
+This generates a good README file
 
 ## Table of Contents
        
@@ -31,10 +31,10 @@ npm i
 ```
 
 ## Usage 
-you can clone or fork this repo
+you can clone or fork this repo and generate readme file
 
 ## Contributing
-you can submit a pull request
+send a pull request to contribute your idea
 
 ## Tests
 To run test, run the following command:<br>
@@ -48,9 +48,9 @@ This project is licensed under the GPL 3.0 license.
 ## Questions
             
 
- ![Profile Picture](https://avatars3.githubusercontent.com/u/266451?v=4)
+ ![Profile Picture](https://avatars1.githubusercontent.com/u/60280549?v=4)
 
- GitHub: [@sathya](https://api.github.com/users/sathya)
+ GitHub: [@karpagasathya](https://api.github.com/users/karpagasathya)
 
 If you want to see more of my work please click here undefined.
 
