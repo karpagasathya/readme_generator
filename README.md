@@ -35,4 +35,4 @@ To generate your own README, first run `npm install` in order to install the fol
 
 ![](images/readme2.gif)
 
-![image](images/image1.jpg)
+![](images/image1.jpg)
