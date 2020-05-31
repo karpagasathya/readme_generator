@@ -31,6 +31,8 @@ To generate your own README, first run `npm install` in order to install the fol
 [MIT](License.txt) license
 
 ## Demo and Screenshots
+![](images/readme2.gif)
+
 [video](images/demo.mov)
 
 ![image](images/image1.jpg)

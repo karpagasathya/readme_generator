@@ -1,5 +1,5 @@
  
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/karpagasathya/readme_generator?style=flat&logo=appveyor)
 # Project-Title
 
@@ -7,7 +7,7 @@ Readme generator
 
 
 ## :pencil2: Description 
-This generates a good README file
+generates readme
 
 ## Table of Contents
        
@@ -31,10 +31,10 @@ npm i
 ```
 
 ## Usage 
-you can clone or fork this repo and generate readme file
+clone the repo
 
 ## Contributing
-send a pull request to contribute your idea
+pull request
 
 ## Tests
 To run test, run the following command:<br>
@@ -43,7 +43,7 @@ npm run test
 ```
 
 ## License
-This project is licensed under the GPL 3.0 license.
+This project is licensed under the MIT license.
 
 ## Questions
             
