@@ -28,7 +28,7 @@ To generate your own README, first run `npm install` in order to install the fol
 
 ## License
 
-[MIT](License.txt) license
+[MIT](license.txt) license
 
 ## Demo and Screenshots
 [Demo video](https://drive.google.com/file/d/1MtPsGf4Cp8F14WcfPWoQPDEXG3-uUFAV/view?usp=sharing)
